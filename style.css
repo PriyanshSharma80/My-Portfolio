@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman';
+}
+
+body {
+    background: url('https://i.pinimg.com/236x/a9/89/37/a98937fd1bdc289060678bbad494cf96.jpg');
+    cursor: pointer;
+}
+
+.My-Img {
+    margin: 50px 0 0 760px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    filter: brightness(1.2);
+    border: 3px solid black;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.Sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    width: 350px;
+    background-color: black;
+    text-align: center;
+    line-height: 75px;
+    color: white;
+    font-size: xx-large;
+    animation: slideIn 1s ease-in-out;
+}
+
+.back-color {
+    text-align: center;
+    display: block;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    background-color: #0000ff;
+    margin: 20px auto 10px auto;
+    height: 70px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    animation: hoverEffect 0.5s ease-in-out;
+}
+
+.container {
+    color: aliceblue;
+    line-height: 100px;
+    margin: 30px 0 0 450px; 
+    font-weight: bold;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.FirstLine {
+    font-size: 50px;
+}
+
+.SecondLine {
+    font-size: 100px;
+}
+
+.TheirdLine { 
+    font-size: 40px;
+}
+
+.bg {
+    position: absolute;
+    top: 450px;
+    background-size: contain;
+    width: 1514px;
+    z-index: -1;
+    animation: fadeIn 3s ease-in-out;
+}
+
+#About, #Education{
+    color: white;
+    margin: 400px 0 0 400px;
+    height: auto;
+    width: 1000px;
+    text-align: left;
+    font-size: 30px;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+a:active{
+    background-color: red;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes hoverEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#Skills {
+    color: white;
+    width: 400px;
+    margin: 500px 0 0 400px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#Skills h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skill-label {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: blue;
+}
+
+.html span {
+    width: 90%;
+}
+
+.javascript span {
+    width: 70%;
+}
+
+#Skills1 {
+    position: absolute;
+    color: white;
+    width: 400px;
+    height: 233px;
+    top: 2243px;
+    left: 1000px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#Skills1 h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.C span {
+    width: 70%;
+}
+
+.DBMS span {
+    width: 50%;
+}
+
+#Spoken {
+    color: white;
+    width: 400px;
+    height: 233px;
+    margin: 400px 0 0 650px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#Spoken h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.Hindi span {
+    width: 100%;
+}
+
+.English span {
+    width: 70%;
+}
+
+#Project, #Contact{
+    color: white;
+    margin: 400px 0 0 400px;
+    height: auto;
+    width: 1000px;
+    text-align: left;
+    font-size: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.Contact-Img{
+    height: 50px;
+    width: 50px;
+}
+
+.social-icons{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,109 @@
+@media (max-width: 1200px) {
+    .container {
+        margin: 30px 0 0 200px;
+        font-size: 40px;
+    }
+
+    .Sidenav {
+        width: 250px;
+        font-size: large;
+    }
+
+    .My-Img {
+        margin: 20px 0 0 580px;
+    }
+
+    #About, #Education {
+        margin: 300px 0 0 200px;
+        width: 80%;
+    }
+
+    #Skills, #Skills1, #Spoken {
+        width: 90%;
+        margin: 20px 0 0 20px;
+    }
+
+    .social-icons {
+        width: 150px;
+        height: 150px;
+    }
+
+    .progress-bar {
+        height: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 30px 0 0 50px;
+        font-size: 30px;
+    }
+
+    .Sidenav {
+        width: 200px;
+        font-size: medium;
+    }
+
+    .My-Img {
+        margin: 20px 0 0 400px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #About, #Education {
+        margin: 300px 0 0 50px;
+        width: 90%;
+    }
+
+    #Skills, #Skills1, #Spoken {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .social-icons {
+        width: 120px;
+        height: 120px;
+    }
+
+    .progress-bar {
+        height: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 30px 0 0 20px;
+        font-size: 20px;
+    }
+
+    .Sidenav {
+        width: 100%;
+        font-size: large;
+        line-height: 50px;
+    }
+
+    .My-Img {
+        margin: 20px 0 0 150px;
+        width: 150px;
+        height: 150px;
+    }
+
+    #About, #Education {
+        margin: 200px 0 0 20px;
+        width: 100%;
+    }
+
+    #Skills, #Skills1, #Spoken {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .social-icons {
+        width: 100px;
+        height: 100px;
+    }
+
+    .progress-bar {
+        height: 8px;
+    }
+}
