@@ -1,0 +1,169 @@
+@media (max-width: 1200px) {
+  .sidenav { width: 240px; }
+  .main-content { margin-left: 240px; }
+  .second-line { font-size: 50px; }
+}
+
+@media (max-width: 1024px) {
+  .sidenav { 
+    transform: translateX(-100%); 
+    width: 280px;
+  }
+  
+  .sidenav.active {
+    transform: translateX(0);
+  }
+  
+  .nav-close {
+    display: block;
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .nav-toggle {
+    display: flex;
+  }
+  
+  .bg {
+    padding: 30px;
+  }
+  
+  .second-line {
+    font-size: 45px;
+  }
+  
+  .timeline::before {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+    left: 0 !important;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content::before,
+  .timeline-item:nth-child(even) .timeline-content::before {
+    left: -40px;
+    right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding-top: 80px;
+  }
+  
+  .my-img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .second-line {
+    font-size: 40px;
+  }
+  
+  .third-line {
+    font-size: 20px;
+  }
+  
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .bg {
+    padding: 20px;
+  }
+  
+  .section {
+    margin: 70px 0;
+  }
+  
+  .section-title {
+    font-size: 32px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .exp-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-line {
+    font-size: 22px;
+  }
+  
+  .second-line {
+    font-size: 32px;
+  }
+  
+  .third-line {
+    font-size: 18px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .nav-toggle {
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .nav-toggle i {
+    font-size: 20px;
+  }
+}
