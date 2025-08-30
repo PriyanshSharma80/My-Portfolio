@@ -144,7 +144,7 @@ window.addEventListener('scroll', function() {
 const profileImg = document.querySelector('.my-img');
 if (profileImg) {
   profileImg.addEventListener('mouseenter', function() {
-    this.style.transform = 'scale(1.05) rotate(5deg)';
+    this.style.transform = 'scale(1.05) rotate(0deg)';
   });
   
   profileImg.addEventListener('mouseleave', function() {
