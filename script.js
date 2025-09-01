@@ -181,3 +181,17 @@ if (profileImg) {
     }
     
     setTimeout(type, 1000);
+
+    const projectCards = document.querySelectorAll('.project-card');
+
+projectCards.forEach(card => {
+  card.addEventListener('mouseenter', function() {
+    this.style.transform = 'translateY(-10px)';
+    this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.12)';
+  });
+  
+  card.addEventListener('mouseleave', function() {
+    this.style.transform = 'translateY(0)';
+    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.08)';
+  });
+});

@@ -597,6 +597,66 @@ body {
   font-size: 16px;
 }
 
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: #4c6ef5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.project-link:hover {
+  background: #3b5bdb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 110, 245, 0.3);
+}
+
+.project-link i {
+  font-size: 12px;
+}
+
+/* Responsive adjustments for project links */
+@media (max-width: 768px) {
+  .project-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-link {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-links {
+    flex-direction: column;
+  }
+  
+  .project-link {
+    width: 100%;
+  }
+}
+
+
 .contact-container {
   max-width: 800px;
   margin: 0 auto;
