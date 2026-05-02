@@ -153,7 +153,7 @@ if (profileImg) {
 }
 
     const typingText = document.querySelector('.typing-text');
-    const words = ["Front-end Developer", "Web Developer", "UI/UX Designer", "Webflow Developer"];
+    const words = ["Software Developer", "PHP Web Developer"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
