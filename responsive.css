@@ -1,7 +1,8 @@
 @media (max-width: 1200px) {
   .sidenav { width: 240px; }
   .main-content { margin-left: 240px; }
-  .second-line { font-size: 50px; }
+  .second-line { font-size: 48px; }
+  .home-container { gap: 35px; }
 }
 
 @media (max-width: 1024px) {
@@ -31,7 +32,21 @@
   }
   
   .second-line {
-    font-size: 45px;
+    font-size: 42px;
+  }
+  
+  .home-container {
+    grid-template-columns: 1fr;
+    max-width: 640px;
+    text-align: center;
+  }
+  
+  .home-left {
+    text-align: center;
+  }
+  
+  .tech-badges, .home-buttons {
+    justify-content: center;
   }
   
   .timeline::before {
@@ -50,6 +65,10 @@
     left: -40px;
     right: auto;
   }
+  
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -57,17 +76,16 @@
     padding-top: 80px;
   }
   
-  .my-img {
-    width: 200px;
-    height: 200px;
-  }
-  
   .second-line {
-    font-size: 40px;
+    font-size: 36px;
   }
   
-  .third-line {
-    font-size: 20px;
+  .typing-text {
+    font-size: 1.4rem;
+  }
+  
+  .tagline {
+    font-size: 14px;
   }
   
   .home-buttons {
@@ -76,8 +94,9 @@
   }
   
   .btn {
-    width: 200px;
+    width: 220px;
     text-align: center;
+    justify-content: center;
   }
   
   .bg {
@@ -89,7 +108,7 @@
   }
   
   .section-title {
-    font-size: 32px;
+    font-size: 28px;
   }
   
   .skills-grid {
@@ -110,6 +129,10 @@
     margin-bottom: 15px;
   }
   
+  .exp-list {
+    text-align: left;
+  }
+  
   .contact-item {
     flex-direction: column;
     text-align: center;
@@ -123,28 +146,42 @@
 
 @media (max-width: 480px) {
   .first-line {
-    font-size: 22px;
-  }
-  
-  .second-line {
-    font-size: 32px;
-  }
-  
-  .third-line {
     font-size: 18px;
   }
   
+  .second-line {
+    font-size: 30px;
+  }
+  
+  .typing-text {
+    font-size: 1.2rem;
+  }
+  
   .section-title {
-    font-size: 28px;
+    font-size: 24px;
+  }
+  
+  .stats-bar {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .stat-number {
+    font-size: 30px;
   }
   
   .skills-grid {
     grid-template-columns: 1fr;
   }
   
+  .terminal-body {
+    font-size: 12px;
+    padding: 15px;
+  }
+  
   .social-icons a {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     font-size: 20px;
   }
   

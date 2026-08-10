@@ -141,19 +141,46 @@ window.addEventListener('scroll', function() {
   background.style.backgroundPosition = `50% ${scrollPosition * 0.3}px`;
 });
 
-const profileImg = document.querySelector('.my-img');
-if (profileImg) {
-  profileImg.addEventListener('mouseenter', function() {
-    this.style.transform = 'scale(1.05) rotate(0deg)';
-  });
-  
-  profileImg.addEventListener('mouseleave', function() {
-    this.style.transform = 'scale(1) rotate(0deg)';
+const matrixCanvas = document.getElementById('matrix-bg');
+if (matrixCanvas) {
+  const ctx = matrixCanvas.getContext('2d');
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+  matrixCanvas.width = width;
+  matrixCanvas.height = height;
+
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<>/\\{}[]=+-*#$@&';
+  const fontSize = 14;
+  const columns = Math.floor(width / fontSize);
+  const drops = Array(columns).fill(1);
+
+  function drawMatrix() {
+    ctx.fillStyle = 'rgba(10, 14, 23, 0.06)';
+    ctx.fillRect(0, 0, width, height);
+    ctx.fillStyle = '#00ff9c';
+    ctx.font = fontSize + 'px monospace';
+    for (let i = 0; i < drops.length; i++) {
+      const char = chars[Math.floor(Math.random() * chars.length)];
+      ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+      if (drops[i] * fontSize > height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i]++;
+    }
+  }
+
+  setInterval(drawMatrix, 50);
+
+  window.addEventListener('resize', function() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    matrixCanvas.width = width;
+    matrixCanvas.height = height;
   });
 }
 
     const typingText = document.querySelector('.typing-text');
-    const words = ["Software Developer", "PHP Web Developer"];
+    const words = ["Python Backend Developer", "FastAPI Developer", "REST API Developer", "AWS Enthusiast"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priyansh Sharma | Portfolio</title>
+  <meta name="description" content="Priyansh Sharma - Python Backend Developer. FastAPI, REST APIs, MySQL, AWS, Docker.">
+  <title>Priyansh Sharma | Python Backend Developer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <canvas id="matrix-bg" aria-hidden="true"></canvas>
+
   <div class="nav-toggle">
     <i class="fas fa-bars"></i>
   </div>
@@ -21,20 +24,17 @@
     <div class="nav-profile">
       <img class="nav-img" src="my_image.jpeg" alt="Profile Image">
       <h3>Priyansh Sharma</h3>
+      <p>&gt; python_backend_dev</p>
     </div>
     <div class="nav-links">
-      <a href="#Home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+      <a href="#Home" class="nav-link active"><i class="fas fa-terminal"></i> Home</a>
       <a href="#About" class="nav-link"><i class="fas fa-user"></i> About Me</a>
       <a href="#Education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a>
       <a href="#Experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
       <a href="#Skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
       <a href="#Spoken" class="nav-link"><i class="fas fa-language"></i> Languages</a>
-      <a href="#Project" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>  
+      <a href="#Project" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
       <a href="#Contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
-    </div>
-    <div class="nav-social">
-      <a href="https://github.com/PriyanshSharma80" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/priyansh-sharma-b04902320" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
   </nav>
 
@@ -44,19 +44,46 @@
 
     <section id="Home" class="home-section">
       <div class="home-container">
-        <img class="my-img" src="my_image.jpeg" alt="My Image" data-aos="zoom-in" data-aos-duration="1200">
-        <div class="container" data-aos="fade-up" data-aos-delay="300">
+        <div class="home-left" data-aos="fade-up">
           <p class="first-line">Hello, I am</p>
           <h1 class="second-line">Priyansh Sharma</h1>
           <h2 class="typing-text"></h2>
+          <p class="tagline">// Python Backend Developer | <span>FastAPI</span> · <span>REST APIs</span> · <span>MySQL</span> · <span>AWS</span></p>
+          <div class="tech-badges">
+            <span class="badge"><i class="fab fa-python"></i> Python</span>
+            <span class="badge"><i class="fas fa-bolt"></i> FastAPI</span>
+            <span class="badge"><i class="fas fa-lock"></i> JWT Auth</span>
+            <span class="badge"><i class="fas fa-database"></i> MySQL</span>
+            <span class="badge"><i class="fab fa-aws"></i> AWS</span>
+            <span class="badge"><i class="fab fa-docker"></i> Docker</span>
+          </div>
           <div class="home-buttons">
             <a href="#Contact" class="btn btn-primary">Contact Me</a>
             <a href="#Project" class="btn btn-secondary">View Projects</a>
+            <a href="Priyansh_Sharma_Python_Developer_Resume.pdf" class="btn btn-ghost" target="_blank" download><i class="fas fa-download"></i> Resume</a>
+          </div>
+        </div>
+
+        <div class="terminal-window" data-aos="fade-left">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">priyansh@dev: ~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+            <p><span class="out">priyansh_sharma.py — Python Backend Developer</span></p>
+            <p><span class="prompt">$</span> <span class="cmd">cat skills.txt</span></p>
+            <p><span class="out">FastAPI · REST APIs · JWT · MySQL · SQLite · AWS EC2/S3</span></p>
+            <p><span class="out">Docker · Linux · Git · Postman · React (basic)</span></p>
+            <p><span class="prompt">$</span> <span class="cmd">sudo hire_me --tech</span></p>
+            <p><span class="out hl blinking">Access granted. Open to opportunities!</span></p>
           </div>
         </div>
       </div>
       <div class="scroll-indicator">
-        <span>Scroll down</span>
+        <span>$ cd about</span>
         <div class="mouse">
           <div class="wheel"></div>
         </div>
@@ -64,13 +91,21 @@
     </section>
 
     <div class="bg">
+      <div class="stats-bar">
+        <div class="stat" data-aos="zoom-in"><span class="stat-number">4+</span><span class="stat-label">Python Projects</span></div>
+        <div class="stat" data-aos="zoom-in" data-aos-delay="100"><span class="stat-number">11+</span><span class="stat-label">Months Experience</span></div>
+        <div class="stat" data-aos="zoom-in" data-aos-delay="200"><span class="stat-number">20+</span><span class="stat-label">Tech Skills</span></div>
+        <div class="stat" data-aos="zoom-in" data-aos-delay="300"><span class="stat-number">40%</span><span class="stat-label">Faster Load Times</span></div>
+      </div>
+
       <section id="About" class="section" data-aos="fade-up">
         <h2 class="section-title"><span>About Me</span></h2>
         <p>
-          I'm <b>Priyansh Sharma</b>, a detail-oriented <b>Software Developer</b> with expertise in 
-          <b>HTML, CSS, JavaScript, PHP, Bootstrap, jQuery, Ajax, CakePHP</b>. Skilled in creating responsive, SEO-optimized, 
-          cross-browser compatible, and user-friendly websites. I have knowledge in API integration, MVC Architecture, Git, and 
-          I'm passionate about building scalable solutions and delivering high-quality digital experiences.
+          I'm <b>Priyansh Sharma</b>, a <b>Python Backend Developer</b> with hands-on experience designing
+          <b>RESTful APIs</b>, <b>JWT-based authentication</b>, and database-driven applications using
+          <b>FastAPI, Pydantic</b>, and <b>MVC architecture</b>. I have built 4+ Python projects covering secure
+          authentication, real-time analytics, and async API design. I'm comfortable with MySQL/SQLite database design,
+          <b>AWS (EC2, S3)</b> deployment, <b>Docker</b>, and Git-based agile workflows, with a focus on clean, maintainable code.
         </p>
       </section>
 
@@ -80,13 +115,13 @@
           <div class="timeline-item" data-aos="fade-right">
             <div class="timeline-content">
               <h3>MCA (2023 - 2025)</h3>
-              <p>Shri Ram Murti Smarak College of Engineering & Technology, Bareilly (AKTU)</p>
+              <p>SRMS College of Engineering & Technology, AKTU, Lucknow</p>
             </div>
           </div>
           <div class="timeline-item" data-aos="fade-left">
             <div class="timeline-content">
               <h3>B.Sc Mathematics (2020 - 2023)</h3>
-              <p>Bareilly College, MJPRU</p>
+              <p>Bareilly College, MJPRU, Bareilly</p>
             </div>
           </div>
           <div class="timeline-item" data-aos="fade-right">
@@ -105,7 +140,7 @@
       </section>
 
       <section id="Experience" class="section" data-aos="fade-up">
-        <h2 class="section-title"><span>Experience & Internship</span></h2>
+        <h2 class="section-title"><span>Experience</span></h2>
         <div class="experience-container">
           <div class="experience-item" data-aos="flip-left">
             <div class="exp-icon">
@@ -115,16 +150,11 @@
               <h3>Junior Software Developer</h3>
               <h4>CodeFire Technologies Pvt Ltd</h4>
               <span class="exp-date"><i class="far fa-calendar-alt"></i> Sep 2025 - Present</span>
-            </div>
-          </div>
-          <div class="experience-item" data-aos="flip-right">
-            <div class="exp-icon">
-              <i class="fas fa-desktop"></i>
-            </div>
-            <div class="exp-content">
-              <h3>Webflow Developer Intern</h3>
-              <h4>Pixel Mascot IT Solutions (Remote)</h4>
-              <span class="exp-date"><i class="far fa-calendar-alt"></i> July 2025 - Sep 2025</span>
+              <ul class="exp-list">
+                <li>Built and maintained 5+ backend web modules using MVC architecture and MySQL, streamlining workflows and reducing feature delivery time.</li>
+                <li>Designed and integrated RESTful APIs with AJAX-driven UI updates, eliminating full-page reloads and cutting average interaction response time by ~30%.</li>
+                <li>Optimized backend logic and database queries to handle large data volumes, improving load times by ~40%.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -133,16 +163,24 @@
       <section id="Skills" class="section" data-aos="fade-up">
         <h2 class="section-title"><span>Skills</span></h2>
         <div class="skills-grid">
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-html5"></i> HTML5 & CSS3</div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="150"><i class="fab fa-js"></i> JavaScript</div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="250"><i class="fas fa-code"></i> Webflow</div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-css3-alt"></i> Tailwind CSS</div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="350"><i class="fab fa-bootstrap"></i> Bootstrap</div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="400"><i class="fab fa-python"></i> Python</div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="500"><i class="fab fa-git"></i> Git/GitHub</div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="550"><i class="fab fa-figma"></i> Figma</div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="600"><i class="fas fa-flask"></i> Flask (Basic)</div>
-          <div class="skill-box" data-aos="zoom-in" data-aos-delay="600"><i class="fab fa-php"></i> PHP</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-python"></i> Python</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="150"><i class="fas fa-bolt"></i> FastAPI</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="200"><i class="fas fa-cube"></i> Pydantic</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="250"><i class="fas fa-plug"></i> REST API Design</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-lock"></i> JWT & OAuth2</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="350"><i class="fas fa-layer-group"></i> MVC Architecture</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-database"></i> MySQL</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="450"><i class="fas fa-database"></i> SQLite & SQLAlchemy</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="500"><i class="fab fa-aws"></i> AWS (EC2, S3)</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="550"><i class="fab fa-docker"></i> Docker</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="600"><i class="fab fa-linux"></i> Linux</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="650"><i class="fab fa-git"></i> Git/GitHub</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="700"><i class="fas fa-paper-plane"></i> Postman</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="750"><i class="fab fa-js"></i> JavaScript</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="800"><i class="fab fa-html5"></i> HTML5 & CSS3</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="850"><i class="fab fa-bootstrap"></i> Bootstrap & Tailwind</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="900"><i class="fas fa-code"></i> jQuery & AJAX</div>
+          <div class="skill-box" data-aos="zoom-in" data-aos-delay="950"><i class="fab fa-react"></i> React (Basic)</div>
         </div>
       </section>
 
@@ -152,14 +190,14 @@
           <div class="language-item" data-aos="fade-up" data-aos-delay="100">
             <div class="language-progress">
               <div class="progress-bar" data-width="95%">
-                <span>Hindi (Fluent)</span>
+                <span>Hindi (Native)</span>
               </div>
             </div>
           </div>
           <div class="language-item" data-aos="fade-up" data-aos-delay="200">
             <div class="language-progress">
               <div class="progress-bar" data-width="75%">
-                <span>English (Intermediate)</span>
+                <span>English (Professional)</span>
               </div>
             </div>
           </div>
@@ -170,59 +208,89 @@
         <h2 class="section-title"><span>Projects</span></h2>
         <div class="projects-grid">
 
+          <div class="project-card" data-aos="flip-left" data-aos-delay="150">
+            <div class="project-icon">
+              <i class="fas fa-link"></i>
+            </div>
+            <h3>Shrink - URL Shortener</h3>
+            <p>Full-stack URL shortener with real-time click analytics, custom aliases, link expiry, and click logging.</p>
+            <div class="project-tags">
+              <span>FastAPI</span><span>Pydantic</span><span>SQLite</span><span>SQLAlchemy</span><span>React</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/PriyanshSharma80/shrink-url-shortener" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://shrink-url-shortener-production-fbf4.up.railway.app" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="flip-left" data-aos-delay="300">
+            <div class="project-icon">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <h3>Secure Notes App</h3>
+            <p>Production-ready REST API with JWT-based authorization and bcrypt password hashing, encrypted data at rest, and role-based access.</p>
+            <div class="project-tags">
+              <span>FastAPI</span><span>MySQL</span><span>JWT</span><span>REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/PriyanshSharma80/Notes_App" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+
           <div class="project-card" data-aos="flip-left" data-aos-delay="450">
             <div class="project-icon">
               <i class="fas fa-microphone-alt"></i>
             </div>
             <h3>Jarvis Voice Assistant</h3>
-            <p>Python, SpeechRecognition, pyttsx3, OpenAI API, Webbrowser, Automation, and OS Module</p>
+            <p>Python voice assistant combining speech recognition and text-to-speech to perform web searches, app launches, and system-level commands via voice.</p>
+            <div class="project-tags">
+              <span>Python</span><span>SpeechRecognition</span><span>pyttsx3</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/PriyanshSharma80/Jarvis_voice_assistant" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
           </div>
 
-          <div class="project-card" data-aos="flip-left" data-aos-delay="450">
+          <div class="project-card" data-aos="flip-left" data-aos-delay="600">
             <div class="project-icon">
               <i class="fas fa-smile"></i>
             </div>
-            <h3>Mood Based UI Customizer</h3>
-            <p>HTML, CSS, JavaScript, face-api.js, Python (Model Serve)</p>
+            <h3>Mood-Based UI Customizer</h3>
+            <p>Real-time emotion-detection system using face-api.js for in-browser facial analysis, backed by an async Python API serving model predictions to drive dynamic UI theming.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>face-api.js</span><span>Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/PriyanshSharma80/Mood-Based-UI-Customizer" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
           </div>
 
-          <div class="project-card" data-aos="flip-left" data-aos-delay="450">
-            <div class="project-icon">
-              <i class="fas fa-users-cog"></i>
-            </div>
-            <h3>User Management System</h3>
-            <p>CakePHP5, MySQL, Bootstrap, jQuery, Ajax</p>
-          </div>
-
-          <div class="project-card" data-aos="flip-left" data-aos-delay="150">
-            <div class="project-icon">
-              <i class="fas fa-shopping-cart"></i>
-            </div>
-            <h3>YourStore (E-Commerce Website)</h3>
-            <p>HTML, CSS, JavaScript, PHP, and MySql</p>
-          </div>
           <div class="project-card" data-aos="flip-left" data-aos-delay="300">
             <div class="project-icon">
               <i class="fas fa-money-bill-wave"></i>
             </div>
             <h3>Fee Management System</h3>
-            <p>Java, Swing (AWT), JDBC, SQLite</p>
-          </div>
-           <div class="project-card" data-aos="flip-left" data-aos-delay="600">
-            <div class="project-icon">
-              <i class="fas fa-school"></i>
+            <p>Desktop-based fee management application with a Java Swing (AWT) GUI for student records and fee tracking, backed by SQLite via JDBC for persistent data storage and receipt generation.</p>
+            <div class="project-tags">
+              <span>Java</span><span>Swing (AWT)</span><span>JDBC</span><span>SQLite</span>
             </div>
-            <h3>School Information Web App</h3>
-            <p>Next.js, Tailwind CSS, MySQL</p>
             <div class="project-links">
-              <a href="https://schools-info-web-app.vercel.app/addSchool" target="_blank" class="project-link">
-                <i class="fas fa-plus-circle"></i> Add School
-              </a>
-              <a href="https://schools-info-web-app.vercel.app/showSchools" target="_blank" class="project-link">
-                <i class="fas fa-list"></i> View Schools
+              <a href="https://github.com/PriyanshSharma80/Fee-Management" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> GitHub
               </a>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -235,7 +303,7 @@
             </div>
             <div class="contact-info">
               <h3>Phone</h3>
-              <p>+91-8791426635</p>
+              <p><a href="tel:+918791426635">+91-8791426635</a></p>
             </div>
           </div>
           <div class="contact-item" data-aos="fade-left">
@@ -244,7 +312,7 @@
             </div>
             <div class="contact-info">
               <h3>Email</h3>
-              <p>sharmapriyansh482@gmail.com</p>
+              <p><a href="mailto:sharmapriyansh482@gmail.com">sharmapriyansh482@gmail.com</a></p>
             </div>
           </div>
           <div class="social-icons">
@@ -258,6 +326,11 @@
         </div>
       </section>
     </div>
+
+    <footer class="footer">
+      <p>Designed & Built by <span>Priyansh Sharma</span></p>
+      <p class="footer-cmd">&gt; python -m portfolio --status active</p>
+    </footer>
   </div>
 
   <div class="back-to-top" id="backToTop">
